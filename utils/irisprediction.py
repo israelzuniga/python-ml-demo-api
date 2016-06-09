@@ -3,7 +3,7 @@ utils/irisprediction.py
 2016 - Demo API
 Israel Z
 '''
-from sklearn.datasets import load_iris
+from sklearn import datasets
 from sklearn.neighbors import KNeighborsClassifier
 
 # predict function
@@ -11,7 +11,7 @@ def predict(features):
     '''
     Docstring
     '''
-    iris = load_iris() # Load the iris dataset
+    iris = datasets.load_iris() # Load the iris dataset
 
     # Create and fit an object based on the classifier
     knn = KNeighborsClassifier()

@@ -22,6 +22,7 @@ class Prediction(Resource):
 		  args['plenght'],
 		  args['pwidth']
 		])
+		print("THE PREDICTION IS: " + str(prediction))
 
 		# Return the prediction from irisprediction.py
 		return {
