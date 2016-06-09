@@ -23,6 +23,7 @@ class Prediction(Resource):
 		  args['pwidth']
 		])
 
+		# Return the prediction from irisprediction.py
 		return {
 		  'slength': args['slength'],
 		  'swidth': args['swidth'],
@@ -31,8 +32,11 @@ class Prediction(Resource):
 		  'species': prediction
 		}
 
+
+
 api.add_resource(Prediction, '/prediction')
 
 
+# Loop the application
 if __name__ == '__main__':
 	app.run(debug=False)

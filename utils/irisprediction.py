@@ -5,7 +5,7 @@ Israel Z
 '''
 from sklearn.datasets import load_iris
 from sklearn.neighbors import KNeighborsClassifier
-import pandas as pd
+
 # predict function
 def predict(features):
     '''
